@@ -4,6 +4,8 @@ import numpy as np
 import torch
 from skimage.color import rgb2lab, lab2rgb
 from skimage.transform import resize
+import warnings
+warnings.filterwarnings("ignore")
 
 # Load the model
 loaded_model = torch.jit.load("colorization_model_scripted.pt")
