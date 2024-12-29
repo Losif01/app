@@ -50,8 +50,9 @@ def postprocess_image(L_channel, ab_channels):
     colorized_image = lab2rgb(lab_image)
 
     # Multiply each color channel by 1.3
-    colorized_image = np.clip(colorized_image * 1.3, 0, 1)
-
+    colorized_image[:,:,0] = np.clip(colorized_image[:,:,0] * 1.1, 0, 1)
+    colorized_image[:,:,1] = np.clip(colorized_image[:,:,1] * 1.0, 0, 1)
+    colorized_image[:,:,2] = np.clip(colorized_image[:,:,2] * .85, 0, 1)
     # Apply histogram stretching
     colorized_image = histogram_stretching(colorized_image)
 
