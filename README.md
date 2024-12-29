@@ -1,21 +1,21 @@
-#Streamlit GUI 
+# Streamlit GUI 
  The user interface for this application is built with Streamlit. It provides an intuitive way to interact with the image colorization system.
 
-##Key Features:
+## Key Features:
 
-###1 -Title and Description:
+### 1 -Title and Description:
 
      The app starts with a title (st.title("Image Colorization")) and description to inform the user about its purpose.
 
-###2 -File Upload:
+### 2 -File Upload:
 
      Users can upload their images in JPEG, JPG, or PNG formats using the st.file_uploader() widget. This triggers the preprocessing and inference steps.
 
-###3 -Image Display:
+### 3 -Image Display:
 
      The original and colorized images are displayed side-by-side using st.image() with captions for clarity.
 
-###4 -Dynamic Updates:
+### 4 -Dynamic Updates:
 
      The app processes and updates outputs dynamically as the user interacts with it.
 
